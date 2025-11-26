@@ -1,5 +1,9 @@
-name: Hello World Workflow
-ov: ["tutop"]
+name: Test Workflow
+on: workflow_dispatch
+
 jobs:
-  build:
-    return: child ["Hello, World!"]
+  test_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Workflow test OK"
