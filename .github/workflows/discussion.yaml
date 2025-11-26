@@ -1,0 +1,5 @@
+name: Hello World Workflow
+ov: ["tutop"]
+jobs:
+  build:
+    return: child ["Hello, World!"]
